@@ -11,7 +11,7 @@
 .
 ├── frontend/                 Vue 3 + Vite + TypeScript 前端
 │   ├── src/views/WorkbenchView.vue|tsx  全部模块共享工作台
-│   ├── src/data/modules.ts              18个业务模块配置
+│   ├── src/data/modules.ts              23个业务模块配置
 │   ├── src/api/              统一请求封装
 │   └── vite.config.ts        dev server 配置（open: false）
 ├── backend/                  FastAPI（Python） 后端
@@ -67,6 +67,7 @@ npm run dev
 | 治理评分 | `govern_score` | 评分任务 | 任务编号、评估对象、评分维度 |
 | 数据契约 | `data_contract` | 契约定义 | 契约编号、数据资产、Schema约束 |
 | 合规扫描 | `compliance_scan` | 扫描任务 | 任务编号、目标资产、合规条款 |
+| 合规复查 | `compliance_review` | 合规复查 | 复查编号、目标资产、合规条款、目标字段 |
 | 问题追踪 | `issue_track` | 治理问题 | 问题编号、关联资产、问题类型 |
 | 版本履历 | `version_history` | 版本快照 | 快照编号、目标资产、版本标签 |
 | 调度治理 | `schedule_job` | 治理调度 | 作业编号、治理类型、目标资产 |

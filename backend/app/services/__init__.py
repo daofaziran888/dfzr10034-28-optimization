@@ -19,6 +19,7 @@ from app.services.tag_registry import TagRegistryService
 from app.services.govern_score import GovernScoreService
 from app.services.data_contract import DataContractService
 from app.services.compliance_scan import ComplianceScanService
+from app.services.compliance_review import ComplianceReviewService
 from app.services.issue_track import IssueTrackService
 from app.services.version_history import VersionHistoryService
 from app.services.schedule_job import ScheduleJobService
@@ -48,6 +49,7 @@ SERVICES: dict[str, BaseModuleService] = {
     "govern_score": GovernScoreService(),
     "data_contract": DataContractService(),
     "compliance_scan": COMPLIANCE_SERVICE,
+    "compliance_review": ComplianceReviewService(),
     "issue_track": IssueTrackService(),
     "version_history": VersionHistoryService(),
     "schedule_job": ScheduleJobService(),
